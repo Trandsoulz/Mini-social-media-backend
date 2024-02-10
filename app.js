@@ -20,7 +20,7 @@ InitialiseDB();
 
 // ! Enable cors, from just this origin
 const corsOptions = {
-  origin: ["http://localhost:3000", "http://192.168.135.242:3000"],
+  origin: ["http://localhost:3000", "http://192.168.135.242:3000", "https://viewstock-socials.vercel.app"],
   optionsSuccessStatus: 200,
   exposedHeaders: "Authorization",
 };
