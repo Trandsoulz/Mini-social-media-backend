@@ -8,7 +8,7 @@ exports.sendEmail = async ({ email, subject, message }) => {
     pool: true,
     host: config.EMAIL_HOST,
     port: config.EMAIL_PORT,
-    secure: false, //In production, set it to true and change EMAIL_PORT to 465
+    secure: true, //In production, set it to true and change EMAIL_PORT to 465
     auth: {
       user: config.EMAIL_USERNAME,
       pass: config.EMAIL_PASSWORD,
