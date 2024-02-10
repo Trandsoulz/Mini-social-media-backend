@@ -141,7 +141,7 @@ exports.ForgotPassword = CatchAsnycError(async (req, res, next) => {
     console.log(error);
     token.otpToken = undefined;
     await token.save({ validateBeforeSave: false });
-    return next(new AppError(error, 500));
+    return next(new AppError("An error occured", 500));
   }
 
   res.status(200).json({
