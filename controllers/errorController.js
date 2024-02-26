@@ -7,7 +7,7 @@ const devError = (err, res) => {
     status: err.status,
     message: err.message,
     err,
-    stakctrace: err.stack,
+    stacktrace: err.stack,
   });
 };
 
